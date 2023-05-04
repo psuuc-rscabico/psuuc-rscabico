@@ -1,190 +1,107 @@
-/* Define styles for navigation bar */
-nav {
+  /* Styles for navigation bar */
+  nav {
+    background-color: black;
+    color: white;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-    font-weight: 600;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 50px;
-  }
-  
-  nav img {
-    width: 100px;
-	  height: 50px;
-	  margin-right: 100px;
-  }
-  nav a:hover {
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
- 
-  
-  /* Define styles for hero section */
-  .hero {
-    background-image: url('okkk.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: #fff;
-    min-height: 100vh;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     font-weight: 600;
   }
-  .hero h1 {
-   
-    font-size: 4rem;
-    margin-bottom: 20px;
-    text-align: center;
-    
-  }
-  
-  .hero p {
-    
-    font-size: 2rem;
-    margin-bottom: 50px;
-  }
-  section h2{
-   font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
-    font-weight: 600;
-   
-  }
 
-  section p{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    font-weight: 600; 
-  }
-  .cta {
- 
-    background-color: #311377;
-    color: #fff;
-    padding: 20px 40px;
-    border-radius: 5px;
-    font-size: 1.5rem;
+  nav a {
+    color: white;
     text-decoration: none;
+    margin-left: 20px;
+   
   }
-  
-  .cta:hover {
-    background-color: #fff;
-    color: #333;
-    border: 2px solid #333;
+
+  nav img {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
   }
-  
-  /* Define styles for about me section */
-  body {
-    background-color: rgb(101, 97, 119);
-    font-family: Arial, sans-serif;
+
+  nav a:hover {
+    background-color: gray;
+    color: black;
   }
-  h1 {
+
+  /* Styles for hero image and header */
+  .hero {
+    background-image: url('bball.jpg');
+    height: 1000px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
     text-align: center;
-  }
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    width: 100px;
-   font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    width: 100%;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600; 
-    color: #FAFF00;
   }
-  .skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    width: 150px;
+
+  /* Styles for call to action button */
+  .cta {
+    margin-top: 10px;
+    display: block;
     text-align: center;
-
   }
-  .skill img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 5%;
-    margin-bottom: 10px;
 
+  .cta a {
+    background-color: orange;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
   }
-  
-  /* Define styles for Footer section */
 
+  .cta a:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Styles for footer */
   footer {
-    background-color: #333;
-    color: #fff;
+    background-color: black;
+    color: white;
     padding: 20px;
-  }
-  
-  .footer-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
-  
-  img {
-    
-    height: 50px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .social-media {
-    display: flex;
-  }
-  
-  .social-media a {
-    display: inline-block;
+
+  footer img {
+    height: 30px;
+    width: 30px;
     margin-right: 10px;
-    color: #fff;
-    font-size: 20px;
   }
-  
-  .social-media i {
-    transition: all 0.3s ease-in-out;
+
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
   }
-  
-  .social-media a:hover i {
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  footer a:hover {
+    background-color: gray;
     transform: scale(1.2);
   }
-  
-  .footer-bottom {
-    text-align: center;
+
+  .disclaimer {
+    font-size: 15px;
     margin-top: 20px;
-    font-size: 14px;
   }
-  
